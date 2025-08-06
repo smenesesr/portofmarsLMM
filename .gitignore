@@ -1,0 +1,109 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual environments
+venv/
+env/
+ENV/
+.venv/
+.env/
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# API Keys (IMPORTANT!)
+*.key
+*api_key*
+*secret*
+config/secrets.yaml
+config/secrets.json
+
+# Data files (large datasets)
+data/raw/*.csv
+data/processed/*.csv
+results/*.csv
+results/**/*.csv
+
+# But keep example/small config files
+!data/config/*.csv
+!data/config/*.yaml
+!data/config/*.json
+
+# Logs
+logs/
+*.log
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+*.temp
+
+# Results and outputs (keep structure, not data)
+results/*.png
+results/*.pdf
+results/plots/*.png
+results/plots/*.pdf
+results/reports/*.html
+results/reports/*.pdf
+
+# But keep example outputs
+!results/example_*
+!docs/images/
+
+# Model outputs and caches
+models/
+cache/
+.cache/
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+
+# Documentation builds
+docs/_build/
+site/

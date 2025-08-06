@@ -1,0 +1,65 @@
+# Mars Game Configuration
+
+game:
+  starting_health: 15
+  max_health: 25
+  rounds: 11
+  investment_range: [0, 10]
+  automatic_decay: 5
+
+events:
+  # Event frequency based on health
+  high_health_threshold: 16  # Health >= 16: 1 event
+  medium_health_threshold: 9  # Health 9-15: 2 events
+  # Health < 9: 3 events
+  
+  # Path to events CSV file (relative to config directory)
+  events_file: "events.csv"
+
+simulation:
+  default_runs: 50
+  temperature: 0.7
+  delay_between_calls: 1.0
+  max_retries: 3
+  timeout: 30
+
+models:
+  gpt-4:
+    api_key_env: "OPENAI_API_KEY"
+    max_tokens: 1000
+    temperature: 0.7
+    
+  gpt-3.5-turbo:
+    api_key_env: "OPENAI_API_KEY"
+    max_tokens: 800
+    temperature: 0.7
+
+  gpt-4-turbo:
+    api_key_env: "OPENAI_API_KEY"
+    max_tokens: 1000
+    temperature: 0.7
+
+# Risk profile settings
+risk_profiles:
+  enabled: true
+  data_file: "../raw/human_responses.csv"
+  risk_column: "Q12"
+  skip_rows: 2
+  levels: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+# Output settings
+output:
+  results_dir: "../../results"
+  plots_dir: "../../results/plots"
+  reports_dir: "../../results/reports"
+  
+  # File naming patterns
+  simulation_pattern: "mars_simulation_{model}_{timestamp}.csv"
+  analysis_pattern: "analysis_{experiment}_{timestamp}.json"
+  plot_pattern: "plot_{type}_{timestamp}.png"
+
+# Logging configuration
+logging:
+  level: "INFO"  # DEBUG, INFO, WARNING, ERROR
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+  file: "../../logs/mars_simulation.log"

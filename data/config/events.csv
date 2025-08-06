@@ -1,0 +1,31 @@
+id,type,value,description
+1,health,7,Increase system health with 7 units
+2,health,-6,Reduce system health with 6 units
+3,none,0,Nothing happens
+4,points,5,Increase points gained with 5 points
+5,health,-5,Reduce system health with 5 units
+6,points,4,Increase points gained with 4 points
+7,points,2,Increase points gained with 2 points
+8,points,-4,Reduce points gained with 4 points
+9,none,0,Nothing happens
+10,none,0,Nothing happens
+11,extra_events,2,2 additional events will happen this round
+12,cap,-6,Reduce investment capacity by 6 units
+13,none,0,Nothing happens
+14,min_invest,8,Must invest at least 8 units this round
+15,health,-1,Reduce system health with 1 unit
+16,points,-1,Reduce points gained with 1 point
+17,points,9,Increase points gained with 9 points
+18,health,-8,Reduce system health with 8 units
+19,none,0,Nothing happens
+20,none,0,Nothing happens
+21,none,0,Nothing happens
+22,health,3,Increase system health with 3 units
+23,points,-5,Reduce points gained with 5 points
+24,health,6,Increase system health with 6 units
+25,none,0,Nothing happens
+26,cap,2,Increase investment capacity by 2 points
+27,health,4,Increase system health with 4 units
+28,none,0,Nothing happens
+29,points,-10,Reduce points gained with 10 points
+30,none,0,Nothing happens
